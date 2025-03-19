@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6C63FF;
+  padding: 20px 50px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #FFD700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #FFD700;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to right, #6C63FF, #4E9F3D);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: #FFD700;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: #FFD700;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #e5c100;
+  transform: scale(1.05);
+}
+
+.about, .skills, .projects, .contact, .certifications {
+  padding: 60px 50px;
+  background-color: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.skill-container .skill {
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden
